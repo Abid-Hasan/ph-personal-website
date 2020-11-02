@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.link-button {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-image: linear-gradient(45deg, #ec4c7a, #f287a6);
+  padding: 10px 20px;
+}
+
+#top-section, #biography-section {
+  background-image: url("../../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#top-section h1, #biography-section h1 {
+  font-size: 2.5rem;
+  color: #ec4c7a;
+  margin-bottom: 2rem;
+}
+
+#top-section p, #biography-section p {
+  margin-bottom: 2rem;
+  color: dimgray;
+}
+
+#top-section .half-width:last-child, #biography-section .half-width:last-child {
+  margin-top: 2rem;
+}
+
+#biography-section {
+  background-image: url("../../images/biography-bg.png");
+}
+
+#biography-section h2 {
+  margin-bottom: 1rem;
+}
+
+#works-section {
+  background-image: url("../../images/latest-work-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#works-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#works-section .one-third {
+  padding: 1rem 0;
+}
+
+#footer-section {
+  background-image: url("../../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: center;
+}
+
+#footer-section h2 {
+  margin-bottom: 2rem;
+}
+
+#footer-section h6 {
+  color: dimgray;
+  margin-bottom: 1rem;
+}
+
+#footer-section > p {
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+
+#footer-section #contact {
+  padding: 4rem 1rem;
+  color: white;
+  background-image: linear-gradient(45deg, #ec4c7a, #f287a6);
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: dimgray;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 3rem 6rem;
+  }
+  #top-section, #biography-section {
+    background-position: top left;
+  }
+}
+
+@media (min-width: 992px) {
+  #top-section, #biography-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #biography-section .half-width:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #biography-section .half-width:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #works .one-third {
+    padding: 1rem;
+  }
+}
